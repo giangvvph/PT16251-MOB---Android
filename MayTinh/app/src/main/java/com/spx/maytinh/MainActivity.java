@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,18 +29,36 @@ public class MainActivity extends AppCompatActivity {
         btn_cong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double so_a = Double.parseDouble(  ed_so_a.getText().toString() );
-                double so_b = Double.parseDouble( ed_so_b.getText().toString()  );
+//                double so_a = Double.parseDouble(  ed_so_a.getText().toString() );
+//                double so_b = Double.parseDouble( ed_so_b.getText().toString()  );
+//
+//                double kq = so_a + so_b;
+//                tv_ketqua.setText(  String.valueOf(kq)  );
 
-                double kq = so_a + so_b;
-                tv_ketqua.setText(  String.valueOf(kq)  );
+                try{
+                    double so_a = Double.parseDouble(  ed_so_a.getText().toString() );
+                    double so_b = Double.parseDouble( ed_so_b.getText().toString()  );
+
+                    double kq = so_a + so_b;
+                    tv_ketqua.setText(  String.valueOf(kq)  );
+                }catch (Exception ex) {
+                    Toast.makeText(getBaseContext(),"Hay nhap so truoc khi tinh toan", Toast.LENGTH_LONG).show();
+                    ed_so_a.setText(""); // xóa rỗng ô nhập text
+                    ed_so_b.setText("");// xóa rỗng ô nhập text
+                }
+
+
+
+
+
+
                 //==== Log -----
                 Log.d("Vidu", "Vi du log");
                 Log.e("Vidu", "Vi du log");
                 Log.v("Vidu", "Vi du log");
                 Log.i("Vidu", "Vi du log");
                 Log.d("Vidu", ed_so_a.getText().toString());
-                Log.i("Vidu", "Ket qua: " + kq);
+//                Log.i("Vidu", "Ket qua: " + kq);
 
             }
         });
