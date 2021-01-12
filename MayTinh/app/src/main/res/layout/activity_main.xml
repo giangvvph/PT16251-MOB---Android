@@ -63,17 +63,23 @@
             android:id="@+id/btn_tru"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cộng" />
+            android:text="Trừ" />
         <Button
             android:id="@+id/btn_nhan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cộng" />
+            android:text="Nhân" />
         <Button
             android:id="@+id/btn_chia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cộng" />
+            android:text="Chia" />
+
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin" />
 </LinearLayout>

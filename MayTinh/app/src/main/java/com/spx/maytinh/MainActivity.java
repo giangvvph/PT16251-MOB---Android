@@ -2,6 +2,7 @@ package com.spx.maytinh;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,14 +43,11 @@ public class MainActivity extends AppCompatActivity {
                     double kq = so_a + so_b;
                     tv_ketqua.setText(  String.valueOf(kq)  );
                 }catch (Exception ex) {
+
                     Toast.makeText(getBaseContext(),"Hay nhap so truoc khi tinh toan", Toast.LENGTH_LONG).show();
                     ed_so_a.setText(""); // xóa rỗng ô nhập text
                     ed_so_b.setText("");// xóa rỗng ô nhập text
                 }
-
-
-
-
 
 
                 //==== Log -----
@@ -67,8 +65,17 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        Button btn_info = findViewById(R.id.btn_info);
+        btn_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getBaseContext(), Info.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
+
+
 }
