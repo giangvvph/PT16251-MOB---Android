@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void XemBaiViet(View view){
-        Intent intent = new Intent(getBaseContext(), BaiViet.class);
+        Intent intent = new Intent(getBaseContext(), MayTinhActivity.class);
         intent.putExtra("name","Nguyen Van A");
         startActivity(intent);
     }

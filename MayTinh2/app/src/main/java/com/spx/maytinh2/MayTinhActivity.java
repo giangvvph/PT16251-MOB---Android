@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class MayTinhActivity extends AppCompatActivity {
     public double so_a;
     public double so_b;
-    public String phepToan;
+    public String phepToan="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +47,7 @@ public class MayTinhActivity extends AppCompatActivity {
                     Double KQ ;
                     switch (phepToan){
                         case "+":
-                            KQ = so_a + so_a;
+                            KQ = so_a + so_b;
                             Toast.makeText(getBaseContext(), String.valueOf(KQ), Toast.LENGTH_SHORT).show();
                             break;
                             ///....
