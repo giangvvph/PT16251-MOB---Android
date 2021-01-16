@@ -19,66 +19,143 @@
             android:layout_weight="0.25"
             android:text="7"
             />
+
         <Button
             android:id="@+id/btn_8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="8"
-            />
+            android:onClick="NumberClick"
+            android:text="8" />
 
         <Button
             android:id="@+id/btn_9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="9"
-            />
+            android:onClick="NumberClick"
+            android:text="9" />
+
         <Button
             android:id="@+id/btn_cong"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="+"
-            />
+            android:onClick="ChonPhepToan"
+            android:text="+" />
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/btn_4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="4"
-            />
+            android:onClick="NumberClick"
+            android:text="4" />
+
         <Button
             android:id="@+id/btn_5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="5"
-            />
+            android:onClick="NumberClick"
+            android:text="5" />
 
         <Button
             android:id="@+id/btn_6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="6"
-            />
+            android:onClick="NumberClick"
+            android:text="6" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="ChonPhepToan"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:onClick="NumberClick"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:onClick="NumberClick"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:onClick="NumberClick"
+        android:text="3" />
+
         <Button
             android:id="@+id/btn_kq"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:text="="
-            />
+            android:onClick="ChonPhepToan"
+            android:text="x" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="NumberClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_c"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="Reset"
+            android:text="c" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="KetQua"
+            android:text="=" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:onClick="ChonPhepToan"
+            android:text=":" />
 
     </LinearLayout>
-
-
 
 </LinearLayout>
