@@ -11,7 +11,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.acitivty_maytinh_relative);
+
     }
     public void XemBaiViet(View view){
         Intent intent = new Intent(getBaseContext(), MayTinhActivity.class);

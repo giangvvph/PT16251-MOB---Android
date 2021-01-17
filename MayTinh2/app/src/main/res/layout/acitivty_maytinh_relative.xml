@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login APP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#2196F3"
+        android:layout_marginBottom="20dp"
+
+        />
+     <TextView
+         android:id="@+id/tv_username"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:text="Username"
+         android:layout_marginTop="20dp"
+         android:layout_below="@+id/tv_title"
+         />
+    <EditText
+        android:id="@+id/ed_username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_username"
+        android:layout_below="@id/tv_title"
+        />
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ed_username"
+        />
+    <EditText
+        android:id="@+id/ed_passwd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_password"
+        android:layout_below="@id/ed_username"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ed_passwd"
+        android:layout_toRightOf="@id/tv_password"
+        android:text="Login"
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="XemBaiViet"
+        android:text="Xem Máy tính"
+
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
