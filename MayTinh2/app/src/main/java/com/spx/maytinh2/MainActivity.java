@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
         setContentView(R.layout.acitivty_maytinh_relative);
 
+        Intent intent = new Intent(getBaseContext(), WidgetActivity.class);
+        startActivity(intent);
+
     }
     public void XemBaiViet(View view){
         Intent intent = new Intent(getBaseContext(), MayTinhActivity.class);
