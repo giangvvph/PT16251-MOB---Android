@@ -40,4 +40,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(editText.getText().toString()) );
         startActivity(intent);
     }
+    public void PhoneCall(View view){
+        EditText editText = findViewById(R.id.ed_phone);
+
+        Intent intent = new Intent(Intent.ACTION_CALL,Uri.parse("tel:"+editText.getText().toString())  );
+        startActivity(intent);
+    }
 }
