@@ -3,6 +3,7 @@ package com.spx.demointent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
         // gửi vào intent
         intent.putExtra("bundle", bundle);
         // khởi động activity
+        startActivity(intent);
+    }
+
+    public void XemWeb(View view){
+        EditText editText = findViewById(R.id.ed_web_url);
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(editText.getText().toString()) );
         startActivity(intent);
     }
 }
